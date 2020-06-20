@@ -3,9 +3,9 @@ def run_guessing_game
   secret_number = rand(1..6).to_s
   puts "Guess a number between 1 and 6"
   guess = gets.chomp.to_s
-  if guess_to_i == secret_number
+  if guess.to_i == secret_number
     puts "You guessed the correct number!"
-  elsif guess_to_s == "exit"
+  elsif guess.to_s == "exit"
     puts "Goodbye"
   else
     puts "Sorry! The computer guessed #{secret_number}."
